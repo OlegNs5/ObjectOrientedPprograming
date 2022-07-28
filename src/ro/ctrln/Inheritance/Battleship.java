@@ -1,4 +1,4 @@
-package ro.ctrln;
+package ro.ctrln.Inheritance;
                         //*** POJO -  Plain Old Java Object ***//
 import java.util.Objects;
 

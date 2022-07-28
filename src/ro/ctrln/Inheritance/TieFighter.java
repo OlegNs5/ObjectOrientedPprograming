@@ -1,6 +1,6 @@
-package ro.ctrln;
+package ro.ctrln.Inheritance;
 
-public class TieFitghter implements Starship {
+public class TieFighter implements Starship {
 private String destination;
     @Override
     public void warp() {
@@ -21,7 +21,7 @@ private String destination;
     @Override
     public String toString() {
         return "TieFitghter{" +
-                "destination='" + destination + '\'' +
+                "destination='" + destination  +'\'' +
                 '}';
     }
 }

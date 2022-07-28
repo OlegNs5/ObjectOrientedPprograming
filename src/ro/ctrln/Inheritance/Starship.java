@@ -1,4 +1,4 @@
-package ro.ctrln;
+package ro.ctrln.Inheritance;
 
 import java.util.Random;
 
@@ -10,12 +10,12 @@ public interface Starship {
 
     void warp();
 
-    void setStarshipDestination(String destination);
+    void setStarshipDestination(String destination);//nu avem voie sa returnam nimic{}
 
-    double computeWarpSpeed(int warpFactor, int lightYearsToDestination); //nu avem voie sa returnam nimic{}
+    double computeWarpSpeed(int warpFactor, int lightYearsToDestination);
 
     default int productionID(){
         Random r = new Random();
-        return FIRST_INT+(SECOND_INT-THIRD_INT)*r.nextInt();
+        return FIRST_INT+(SECOND_INT-THIRD_INT)*r.nextInt(); //ce inseamna acest "next"?
     }
 }

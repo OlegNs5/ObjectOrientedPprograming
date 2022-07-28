@@ -1,4 +1,4 @@
-package ro.ctrln;
+package ro.ctrln.Inheritance;
                             /*implements  este    mostenirea din interfata*/
 public class XWingStarfighter implements Starship {//interfata descrie un comportament
 
@@ -7,7 +7,7 @@ public class XWingStarfighter implements Starship {//interfata descrie un compor
 
     @Override
     public void warp() {
-        System.out.println("XWingStarfigther este acum in viteza warp");
+        System.out.println("XWingStarfigther este acum in viteza warp! ");
     }
 
     @Override
@@ -23,7 +23,6 @@ public class XWingStarfighter implements Starship {//interfata descrie un compor
         }
     }
 
-    @Override
     public double computeWarpSpeed(int warpFactor, int lightYearsToDestination) {
        this.lightYearsToDestination = lightYearsToDestination;
         return Math.pow(warpFactor,3) * Math.pow(10,8);

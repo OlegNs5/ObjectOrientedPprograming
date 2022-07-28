@@ -1,4 +1,4 @@
-package ro.ctrln;
+package ro.ctrln.Inheritance;
 
 import java.util.Objects;
 

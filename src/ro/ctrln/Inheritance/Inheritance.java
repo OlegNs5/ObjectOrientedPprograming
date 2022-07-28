@@ -1,4 +1,4 @@
-package ro.ctrln;
+package ro.ctrln.Inheritance;
 
 public class Inheritance {
     public static void main(String[] args) {
@@ -20,10 +20,21 @@ public class Inheritance {
         xWingStarfighter.warp();
         System.out.println("XWingStarfighter is: "+xWingStarfighter);
 
-        TieFitghter tieFitghter = new TieFitghter();
-        tieFitghter.setStarshipDestination("base");
-        System.out.println("Velosity for TieFighter is; "+ tieFitghter.computeWarpSpeed(3,1000));
-        tieFitghter.warp();
-        System.out.println("tieFtghter is "+ tieFitghter);
+        TieFighter tieFighter = new TieFighter();
+        tieFighter.setStarshipDestination("base");
+        System.out.println("Velosity for TieFighter is; "+ tieFighter.computeWarpSpeed(3,1000));
+        tieFighter.warp();
+        System.out.println("tieFtghter is "+ tieFighter);
+
+        FalconHeavy falconHeavy = new FalconHeavy();
+        falconHeavy.setBattleshipName("FalconHeavy");
+        falconHeavy.setBattleshipCapacity(10 );
+        falconHeavy.setDestination("Moon");
+        System.out.println("This is " + falconHeavy);
+
+        falconHeavy.setStarshipDestination("Mars");
+        System.out.println("FlaconHeavy is: "+ falconHeavy);
+
+        falconHeavy.lauchCoutdown();
     }
 }
