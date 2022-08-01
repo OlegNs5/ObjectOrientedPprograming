@@ -27,3 +27,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/ro/ctrln/misc/
+/src/ro/ctrln/polymorphism/
+/src/ro/ctrln/Inheritance/

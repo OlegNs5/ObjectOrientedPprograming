@@ -24,6 +24,8 @@ public class StarPortUsege {
         starPort.setStarship(tieFighter);
         starPort.flyToSpace();
         System.out.println(starPort);
+
+
 // -------------------------------------*************---------------------------
         Starship starshipOne = new FalconHeavy();
         Starship starshipTwo = new XWingStarfighter();
@@ -35,7 +37,7 @@ public class StarPortUsege {
 
        // FalconHeavy falconHeavyOne = new Battleship(); NU pot face cast de la obiect de tipul copil la un obiect de tipul parinte
 
-        starPort.setStarship(starshipOne);
+        starPort.setStarship(starshipOne); //instatierea cu o clasa copil FlconHeavy spre starship prin starshipOne
         starPort.flyToSpace();
       //  System.out.println(starPort);
 

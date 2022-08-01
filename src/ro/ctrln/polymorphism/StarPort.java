@@ -12,9 +12,8 @@ public class StarPort {
         return this.starship;
     }
     public void flyToSpace(){
-        //starship.setStarshipDestination("base");
         starship.warp();
-
+        //starship.setStarshipDestination("base");
     }
 
     @Override
