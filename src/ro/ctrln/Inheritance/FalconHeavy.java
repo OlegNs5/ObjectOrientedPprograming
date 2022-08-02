@@ -52,7 +52,7 @@ public class FalconHeavy extends Battleship implements Starship,Rocket {
     public void escapeProccedure(int escapePods) {
         // Apeleaza clasa parinte "Battleship" cu ajutorul keyword "super"
         super.escapeProccedure(escapePods);
-        System.out.println("We are in Falcon Heavy now ");
+        System.out.println("We are in Falcon Heavy now: " + this.battleshipName);
         System.out.println("Escape procedure initiated in Falcon Heavy class with " + escapePods + " escape pods");
     }
 

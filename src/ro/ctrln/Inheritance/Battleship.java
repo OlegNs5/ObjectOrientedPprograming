@@ -3,7 +3,7 @@ package ro.ctrln.Inheritance;
 import java.util.Objects;
 
 public class Battleship {
-    private String battleshipName;
+    protected String battleshipName;
     private int battleshipCapacity;
 
                         //*** Constructor ***//
