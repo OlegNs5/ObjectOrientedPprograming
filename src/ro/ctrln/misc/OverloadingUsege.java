@@ -1,6 +1,7 @@
 package ro.ctrln.misc;
 
 import ro.ctrln.Inheritance.FalconHeavy;
+import ro.ctrln.util.ProjectUtils;
 
 public class OverloadingUsege {
     public static void main(String[] args) {
@@ -8,13 +9,13 @@ public class OverloadingUsege {
                                         ///***Apelam metodele din FalconHeavy***///
                                         //fiecare metoda se apeleaza in functie de tipul ei de date
         falconHeavy.escapeProccedure(10);
-        System.out.println("----------------------");
+        ProjectUtils.printMessage("----------------------");
         falconHeavy.escapeProccedure(15,true);
-        System.out.println("----------------------");
+        ProjectUtils.printMessage("----------------------");
         falconHeavy.escapeProccedure();
-        System.out.println("----------------------");
+        ProjectUtils.printMessage("----------------------");
         falconHeavy.escapeProccedure(true,false,true,false,true);
-        System.out.println("----------------------");
-        System.out.println(falconHeavy.escapeProccedure(false));
+        ProjectUtils.printMessage("----------------------");
+        ProjectUtils.printMessage(falconHeavy.escapeProccedure(false));
     }
 }

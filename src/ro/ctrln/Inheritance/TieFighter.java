@@ -1,10 +1,12 @@
 package ro.ctrln.Inheritance;
 
+import ro.ctrln.util.ProjectUtils;
+
 public class TieFighter implements Starship {
 private String destination;
     @Override
     public void warp() {
-        System.out.println("TieFighter is now in warp speed");
+        ProjectUtils.printMessage("TieFighter is now in warp speed");
     }
 
     @Override

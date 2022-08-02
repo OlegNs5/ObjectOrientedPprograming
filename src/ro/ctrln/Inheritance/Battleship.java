@@ -1,8 +1,12 @@
 package ro.ctrln.Inheritance;
                         //*** POJO -  Plain Old Java Object ***//
+import ro.ctrln.util.ProjectUtils;
+
 import java.util.Objects;
 
 public class Battleship {
+    public static final int ID = 1;//asa se declara o constanta
+
     protected String battleshipName;
     private int battleshipCapacity;
 
@@ -52,7 +56,7 @@ public class Battleship {
         return Objects.hash(battleshipName, battleshipCapacity);
     }
     public void escapeProccedure(int escapePods){
-        System.out.println("Escape procedure initiated in Battleship class with " + escapePods + " escape pods");
+        ProjectUtils.printMessage("Escape procedure initiated in Battleship class with " + escapePods + " escape pods");
 
     }
 }

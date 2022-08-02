@@ -1,5 +1,8 @@
 package ro.ctrln.Inheritance;
-                            /*implements  este    mostenirea din interfata*/
+
+import ro.ctrln.util.ProjectUtils;
+
+/*implements  este    mostenirea din interfata*/
 public class XWingStarfighter implements Starship {//interfata descrie un comportament
 
     private String destination;
@@ -7,7 +10,7 @@ public class XWingStarfighter implements Starship {//interfata descrie un compor
 
     @Override
     public void warp() {
-        System.out.println("XWingStarfigther este acum in viteza warp! ");
+        ProjectUtils.printMessage("XWingStarfigther este acum in viteza warp! ");
     }
 
     @Override

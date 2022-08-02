@@ -1,6 +1,7 @@
 package ro.ctrln.Inheritance;
 
 
+import ro.ctrln.util.ProjectUtils;
 
 public class FalconHeavy extends Battleship implements Starship,Rocket {
 
@@ -13,7 +14,7 @@ public class FalconHeavy extends Battleship implements Starship,Rocket {
 
     @Override
     public void setStarshipDestination(String destination) {
-        System.out.println(this.destination = getBattleshipName() + " goes to " + destination);//intoarce go to in star usege
+        ProjectUtils.printMessage(this.destination = getBattleshipName() + " goes to " + destination);//intoarce go to in star usege
         this.destination = getBattleshipName() + " goes to " + destination;
 
     }
@@ -52,8 +53,8 @@ public class FalconHeavy extends Battleship implements Starship,Rocket {
     public void escapeProccedure(int escapePods) {
         // Apeleaza clasa parinte "Battleship" cu ajutorul keyword "super"
         super.escapeProccedure(escapePods);
-        System.out.println("We are in Falcon Heavy now: " + this.battleshipName);
-        System.out.println("Escape procedure initiated in Falcon Heavy class with " + escapePods + " escape pods");
+        ProjectUtils.printMessage("We are in Falcon Heavy now: " + this.battleshipName);
+        ProjectUtils.printMessage("Escape procedure initiated in Falcon Heavy class with " + escapePods + " escape pods");
     }
 
     public String escapeProccedure(boolean activated) {//Aceasta este o metoda de supraincarcare
@@ -61,7 +62,7 @@ public class FalconHeavy extends Battleship implements Starship,Rocket {
     }
 
     public void escapeProccedure(int escapePods, boolean activated) {// Metodele/supraincarcare au acelasi nume dar parametri diferiti
-        System.out.println(escapeProccedure(activated));
+        ProjectUtils.printMessage(escapeProccedure(activated));
         if (activated) {
             escapeProccedure(escapePods);
         }
@@ -70,10 +71,10 @@ public class FalconHeavy extends Battleship implements Starship,Rocket {
     // ... inseamna "varargs" - variable arguments - transfera un numar de variabile catre metoda noastra
     public void escapeProccedure(boolean... activated) {
         for (boolean active : activated) {
-            System.out.println("Activation sequence: " + active);
+            ProjectUtils.printMessage("Activation sequence: " + active);
         }
     }
     public void escapeProccedure(){
-        System.out.println("Waiting for the escape procedure");
+        ProjectUtils.printMessage("Waiting for the escape procedure");
     }
 }

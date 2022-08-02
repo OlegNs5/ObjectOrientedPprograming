@@ -1,6 +1,7 @@
 package ro.ctrln.polymorphism;
 
 import ro.ctrln.Inheritance.*;
+import ro.ctrln.util.ProjectUtils;
 
 public class StarPortUsege {
     public static void main(String[] args) {
@@ -15,15 +16,15 @@ public class StarPortUsege {
         StarPort starPort = new StarPort();
         starPort.setStarship(falconHeavy);
         starPort.flyToSpace();
-        System.out.println(starPort);
+        ProjectUtils.printMessage(starPort);
 
         starPort.setStarship(xWingStarfighter);
         starPort.flyToSpace();
-        System.out.println(starPort);
+        ProjectUtils.printMessage(starPort);
 
         starPort.setStarship(tieFighter);
         starPort.flyToSpace();
-        System.out.println(starPort);
+        ProjectUtils.printMessage(starPort);
 
 
 // -------------------------------------*************---------------------------
@@ -39,11 +40,11 @@ public class StarPortUsege {
 
         starPort.setStarship(starshipOne); //instatierea cu o clasa copil FlconHeavy spre starship prin starshipOne
         starPort.flyToSpace();
-      //  System.out.println(starPort);
+      //  ProjectUtils.printMessage(starPort);
 
         starPort.setStarship(starshipTwo);
         starPort.flyToSpace();
-       System.out.println(starPort);
+       ProjectUtils.printMessage(starPort);
 
         starPort.setStarship(starshipThree);
         starPort.flyToSpace();

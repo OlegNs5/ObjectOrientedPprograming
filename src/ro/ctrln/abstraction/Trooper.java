@@ -1,5 +1,7 @@
 package ro.ctrln.abstraction;
 
+import ro.ctrln.util.ProjectUtils;
+
 public abstract class Trooper {
 
     private int numberOfCapabilities;
@@ -13,7 +15,7 @@ public abstract class Trooper {
     }
 
     public void fight(String enemy){
-        System.out.println("Fithing the enemy" + enemy);
+        ProjectUtils.printMessage("Fithing the enemy" + enemy);
     }
 
     public abstract String warCry(); //la fel ca si in "interfata" nu trebuie sa scriem si codul doar signatura
